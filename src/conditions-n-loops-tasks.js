@@ -154,47 +154,89 @@ function convertNumberToString(numberStr) {
     const char = numberStr[i];
     switch (char) {
       case '1':
-        result += `one `;
+        if (i > 0) {
+          result += ' ';
+        }
+        result += `one`;
         break;
       case '2':
-        result += `two `;
+        if (i > 0) {
+          result += ' ';
+        }
+        result += `two`;
         break;
       case '3':
-        result += `three `;
+        if (i > 0) {
+          result += ' ';
+        }
+        result += `three`;
         break;
       case '4':
-        result += `four `;
+        if (i > 0) {
+          result += ' ';
+        }
+        result += `four`;
         break;
       case '5':
-        result += `five `;
+        if (i > 0) {
+          result += ' ';
+        }
+        result += `five`;
         break;
       case '6':
-        result += `six `;
+        if (i > 0) {
+          result += ' ';
+        }
+        result += `six`;
         break;
       case '7':
-        result += `seven `;
+        if (i > 0) {
+          result += ' ';
+        }
+        result += `seven`;
         break;
       case '8':
-        result += `eight `;
+        if (i > 0) {
+          result += ' ';
+        }
+        result += `eight`;
         break;
       case '9':
-        result += `nine `;
+        if (i > 0) {
+          result += ' ';
+        }
+        result += `nine`;
         break;
       case '0':
-        result += `zero `;
+        if (i > 0) {
+          result += ' ';
+        }
+        result += `zero`;
         break;
       case '.':
-        result += `point `;
+        if (i > 0) {
+          result += ' ';
+        }
+        result += `point`;
+        break;
+      case ',':
+        if (i > 0) {
+          result += ' ';
+        }
+        result += `point`;
         break;
       case '-':
-        result += `minus `;
+        if (i > 0) {
+          result += ' ';
+        }
+        result += `minus`;
         break;
       default:
         break;
     }
     i += 1;
   }
-  return result.trimEnd();
+  return result;
 }
 
 /**
